@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Pokemon Raiders</string>
+    <string name="title_home">Threads</string>
+    <string name="title_dashboard">Post Raid</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="TrainerCard">Trainer Card</string>
+    <string name="PokeRanks">Ranks</string>
+    <string name="title_activity_rank_system">RankSystem</string>
+    <string name="MyRaids">My Raids</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+    <string name="title_activity_create_account">CreateAccount</string>
+    <string name="CreateAcc">Create new Raiders Account</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="Faction">Faction</string>
+    <string name="Valor">Valor</string>
+    <string name="Mystic">Mystic</string>
+    <string name="Instinct">Instinct</string>
+    <string name="Login">Login to your Raider Account</string>
+    <string name="LoginButton">Login</string>
+</resources>

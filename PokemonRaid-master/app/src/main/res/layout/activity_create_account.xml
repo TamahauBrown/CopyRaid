@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAccount"
+    android:background="@drawable/gradient">
+
+
+    <TextView
+        android:id="@+id/requestUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="46dp"
+        android:text="@string/Username"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CreateAccount" />
+
+    <TextView
+        android:id="@+id/CreateAccount"
+        android:layout_width="321dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="167dp"
+        android:text="@string/CreateAcc"
+        android:textAppearance="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/RequestPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/Faction"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requestPassword" />
+
+    <TextView
+        android:id="@+id/requestPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/Password"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/requestUsername" />
+
+    <EditText
+        android:id="@+id/getUsername"
+        android:layout_width="217dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="121dp"
+        android:ems="10"
+        android:hint="Maximum of 8 characters"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/RequestPassword"
+        app:layout_constraintTop_toBottomOf="@+id/CreateAccount" />
+
+    <EditText
+        android:id="@+id/getPassword"
+        android:layout_width="205dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="121dp"
+        android:ems="10"
+        android:hint="Maximum of 6 characters"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/RequestPassword"
+        app:layout_constraintTop_toBottomOf="@+id/getUsername" />
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="175dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="191dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="192dp"
+        android:onClick="Create"
+        android:text="@string/CreateAcc"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MysticFaction" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="93dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="14dp"
+        android:src="@drawable/mystic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/LoginButton" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="93dp"
+        android:layout_height="235dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="14dp"
+        android:src="@drawable/valor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginButton" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="93dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="14dp"
+        android:src="@drawable/instinct"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginButton" />
+
+    <Button
+        android:id="@+id/MysticFaction"
+        android:layout_width="89dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="7dp"
+        android:backgroundTint="#03A9F4"
+        android:onClick="Mystic"
+        android:text="@string/Mystic"
+        app:layout_constraintEnd_toStartOf="@+id/ValorFaction"
+        app:layout_constraintStart_toEndOf="@+id/InstinctFaction"
+        app:layout_constraintTop_toBottomOf="@+id/getPassword" />
+
+    <Button
+        android:id="@+id/InstinctFaction"
+        android:layout_width="89dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="22dp"
+        android:backgroundTint="#FFEB3B"
+        android:onClick="Instinct"
+        android:text="@string/Instinct"
+        app:layout_constraintEnd_toStartOf="@+id/MysticFaction"
+        app:layout_constraintStart_toEndOf="@+id/RequestPassword"
+        app:layout_constraintTop_toBottomOf="@+id/getPassword" />
+
+    <Button
+        android:id="@+id/ValorFaction"
+        android:layout_width="89dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#F44336"
+        android:onClick="Valor"
+        android:text="@string/Valor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/MysticFaction"
+        app:layout_constraintTop_toBottomOf="@+id/getPassword" />
+
+</android.support.constraint.ConstraintLayout>
